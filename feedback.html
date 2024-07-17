@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240716174844">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.webp" alt="Image">
+				</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="documentation.html" class="menu__link">Документация и ресурсы</a>
+							</li>
+							<li class="menu__item"><a href="guidelines.html" class="menu__link">Методические рекомендации</a>
+							</li>
+							<li class="menu__item"><a href="analysis.html" class="menu__link">Состав средств анализа</a></li>
+						</ul>
+						<div class="header__buttons">
+							<a href="#" class="header__open">Войти</a>
+							<a href="feedback.html" class="header__feedback">Обратная связь</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="feedback">
+				<div class="feedback__container">
+					<div class="feedback__top feedback__image">
+						<img src="img/bgp.webp" alt="Image">
+						<div class="feedback__top_name">Форма обратной связи</div>
+					</div>
+					<div class="feedback__bottom">
+						<div class="feedback__title">Заполните форму и наши специалисты свяжутся с вами в ближайшее
+							время</div>
+						<div class="feedback__form">
+							<form action="" method="get">
+								<input data-required placeholder="ФИО*" type="text" class="feedback__name">
+								<input data-required placeholder="Должность*" type="text" class="feedback__job">
+								<input data-required placeholder="+7 999 001 01 01*" type="tel" class="feedback__tel">
+								<input data-error="Введен не верный E-mail" data-required="email" placeholder="Е-mail" type="email" class="feedback__email" name="form[]">
+								<textarea data-required placeholder="Сообщение" name="feedback__message" id="message" class="feedback__message"></textarea>
+								<div class="feedback__political-top">
+									<p>* – обязательные для заполнения поля. Телефон и e-mail будут использоваться
+										для
+										обратной связи</p>
+								</div>
+								<div class="feedback__political">
+									<input type="checkbox" class="feedback__checkbox" id="checkbox">
+									<label for="checkbox" class="custom-checkbox"></label>
+									<div class="feedback__inf">
+										<p>Подтверждаю, что ознакомлен и согласен с условиями обработки <a href="">персональных данных</a></p>
+									</div>
+								</div>
+								<button type="submit" class="feedback__button">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<a href="index.html" class="footer__image">
+						<img src="img/logo.webp" alt="Image">
+					</a>
+					<div class="footer__top_links">
+						<a href="documentation.html" class="footer__link">Документация и ресурсы</a>
+						<a href="guidelines.html" class="footer__link">Методические рекомендации</a>
+						<a href="analysis.html" class="footer__link">Состав средств анализа</a>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copyright">Copyright © 2024 ИСП РАН.</div>
+					<div class="footer__political">Продолжая использовать наш сайт, вы даете согласие на обработку файлов
+						cookies и других пользовательских данных, в соответствии с <a href="">Политикой конфиденциальности.</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240716174844"></script>
+</body>
+
+</html>
